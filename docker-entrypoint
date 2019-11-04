@@ -3,7 +3,7 @@ set -e
 if [ ! -f /usr/lib/python3.7/site-packages/openpyn/credentials ]; then
     echo $NORDVPN_USERNAME >> /usr/local/lib/python3.6/dist-packages/openpyn/credentials
     echo $NORDVPN_PASSWORD >> /usr/local/lib/python3.6/dist-packages/openpyn/credentials
-	chmod 600 /usr/lib/python3.7/site-packages/openpyn/credentials
+    chmod 600 /usr/lib/python3.7/site-packages/openpyn/credentials
 fi
 
 openpyn $COUNTRY $ARG
